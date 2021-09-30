@@ -1,0 +1,10 @@
+<!-- -*- xml -*- -->
+<!--
+  -->
+<launch> 
+<node type="rviz" name="rviz" pkg="rviz" args="-d $(find record_demonstrations)/rviz/config.rviz" />
+<include file="$(find sound_play)/launch/soundplay_node.launch"/> 
+<include file="$(find audio_play)/launch/play.launch"/> 
+<node pkg="record_demonstrations" type="play_bag.sh" name="play_bag_script"/> 
+</launch> 
+
