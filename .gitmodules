@@ -1,0 +1,6 @@
+[submodule "src/audio_common"]
+	path = src/audio_common
+	url = https://github.com/ros-drivers/audio_common.git
+[submodule "src/usb_cam"]
+	path = src/usb_cam
+	url = https://github.com/ros-drivers/usb_cam.git

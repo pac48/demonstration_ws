@@ -22,7 +22,7 @@
 </group>
 
 <group if="$(eval arg('camera') =='usb')">
-	<include file="$(find usb_cam)/launch/usb_cam.launch"/>
+	<include file="$(find usb_cam)/launch/usb_cam-test.launch"/>
         <arg name="camera_topic" value="/usb_cam/image_raw/compressed"/>
 	<node pkg="rosbag" type="record" name="rosbag_record" args="record -O $(env DEMO_WS)/src/demonstration/demonstration.bag $(arg camera_topic) $(arg joint_topic) /audio/audio /audio/audio_info" />
 </group>
